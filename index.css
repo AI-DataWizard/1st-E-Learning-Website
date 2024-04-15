@@ -139,7 +139,7 @@ header .menu {
 .home {
   min-height: 110vh;
   background: linear-gradient(rgba(102, 0, 153, 0.7), rgba(102, 0, 153, 1)),
-    url(/assets/pexels-julia-m-cameron-4144294.jpg);
+    url(pexels-julia-m-cameron-4144294.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -295,7 +295,7 @@ header .menu {
 
 .teacher {
   background: linear-gradient(rgba(248, 248, 255, 0.2), rgba(248, 248, 255, 1)),
-    url(/assets/class.jpg);
+    url(class.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -399,7 +399,7 @@ header .menu {
 
 .review {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(/assets/review.jpg);
+    url(review.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
