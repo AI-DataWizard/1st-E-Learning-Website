@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --text: #333333;
+  --cta: #ff6600;
+  --ftext: #f8f8ff;
+  --back2: #660099;
+  --footer: #720082;
+  --heading: #660099;
+  --back: #f8f8ff;
+  --hover: #ff00ae;
+  --star: #007fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+}
+
+*::selection {
+  color: var(--ftext);
+  background-color: var(--cta);
+}
+
+.heading {
+  font-size: 4rem;
+  color: var(--heading);
+  text-align: center;
+  padding: 0 1rem;
+  padding-top: 5rem;
+  letter-spacing: 0.2rem;
+  font-weight: bolder;
+}
+
+.title {
+  padding: 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--hover);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 96%;
+  background-color: var(--back2);
+  color: var(--ftext);
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  transition: 0.4s;
+}
+
+.acth {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+  top: 0;
+}
+
+header .navbar.act {
+  top: 6.4rem;
+  transition: 0.5s ease;
+}
+
+body {
+  background: var(--back);
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header .navbar ul li {
+  margin: 0 1rem;
+}
+
+header .navbar ul li a {
+  color: var(--ftext);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+header .navbar ul li a:hover,
+header .navbar ul li .active {
+  color: var(--hover);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo #icon {
+  font-size: 3rem;
+  margin-right: 1.2rem;
+  color: var(--hover);
+  padding: 0.2rem;
+}
+
+header .logo h1 {
+  font-size: 3rem;
+  color: var(--ftext);
+  text-transform: uppercase;
+}
+
+header .logo h1 span {
+  font-size: 3rem;
+  color: var(--ftext);
+  text-transform: lowercase;
+}
+
+header .menu {
+  font-size: 3rem;
+  color: var(--ftext);
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  min-height: 110vh;
+  background: linear-gradient(rgba(102, 0, 153, 0.7), rgba(102, 0, 153, 1)),
+    url(/assets/pexels-julia-m-cameron-4144294.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.home .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-top: 14rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+.home .content h1 {
+  font-size: 5rem;
+  color: var(--ftext);
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+}
+
+.home .content p {
+  font-size: 2rem;
+  color: var(--back);
+  margin: 1rem 0;
+  padding: 2rem 10rem;
+}
+
+.home .content button {
+  height: 5rem;
+  width: 20rem;
+  border-radius: 5rem;
+  background-color: var(--heading);
+  color: var(--ftext);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+  font-weight: bold;
+}
+
+.home .box-con {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home .box-con .box {
+  height: 20rem;
+  width: 25rem;
+  background: var(--back);
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.home .box-con .box .icon {
+  margin: 1.5rem auto;
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--ftext);
+  background: var(--back2);
+  transition: 0.2s;
+  font-size: 3rem;
+}
+
+.home .box-con .box h3 {
+  font-size: 2rem;
+  color: var(--heading);
+  transition: 0.2s;
+}
+
+.home .box-con .box p {
+  font-size: 1.3rem;
+  padding: 0.7rem 2rem;
+  color: var(--text);
+}
+
+.home .box-con .box:hover {
+  background-color: var(--hover);
+}
+
+.home .box-con .box:hover h3,
+.home .box-con .box:hover p {
+  color: var(--ftext);
+}
+
+.home .box-con .box:hover .icon {
+  color: var(--hover);
+  background-color: var(--back);
+}
+
+.home .content button:hover {
+  background-color: var(--hover);
+  transform: scale(1.2);
+}
+
+.about .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.about .image img {
+  height: 50vh;
+  width: 40vw;
+}
+
+.about .row .content {
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  color: var(--heading);
+  padding: 1rem 0;
+}
+.about .row .content p {
+  font-size: 1.6rem;
+  color: var(--text);
+  padding: 5rem 0;
+}
+
+.about .row .content button {
+  height: 3.5rem;
+  width: 17rem;
+  background: var(--back2);
+  color: var(--ftext);
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.about .row .content button:hover {
+  background: var(--hover);
+  transform: scale(1.4);
+}
+
+.teacher {
+  background: linear-gradient(rgba(248, 248, 255, 0.2), rgba(248, 248, 255, 1)),
+    url(/assets/class.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.teacher .card-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.teacher .card-con .card {
+  width: 40rem;
+  height: 50rem;
+  margin: 3rem;
+  background-color: var(--back2);
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  color: var(--ftext);
+}
+
+.teacher .card-con .card img {
+  width: 40rem;
+  height: 25rem;
+  border-top-right-radius: 5rem;
+  border-top-left-radius: 5rem;
+}
+
+.teacher .card-con .card h3 {
+  font-size: 3rem;
+}
+
+.teacher .card-con .card p {
+  font-size: 1.3rem;
+  margin: 3rem;
+}
+
+.teacher .card-con .card .icons #icon {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  color: var(--ftext);
+  transition: 0.2s;
+}
+
+.teacher .card-con .card .icons #icon:hover {
+  color: var(--hover);
+  font-size: 2.5rem;
+}
+
+.course .box-con {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+  flex-wrap: wrap;
+}
+
+.course .box-con .box {
+  height: 22rem;
+  width: 30rem;
+  margin: 4rem 2.5rem;
+  background-color: var(--back);
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 6px 4px 6px rgba(102, 0, 153, 0.2),
+    -6px -4px 6px rgba(102, 0, 153, 0.2), 0 0 10px rgba(102, 0, 153, 0.2);
+}
+
+.course .box-con .box .icon {
+  height: 10rem;
+  width: 10rem;
+  line-height: 8rem;
+  text-align: center;
+  color: var(--ftext);
+  border-radius: 50%;
+  background: var(--hover);
+  margin: 1rem auto;
+  border: 1rem solid var(--ftext);
+  border-left: 1rem solid var(--hover);
+  border-right: 1rem solid var(--hover);
+  box-shadow: inset 0 0 1rem var(--back);
+  font-size: 3.5rem;
+}
+
+.course .box-con .box h3 {
+  font-size: 2.2rem;
+  color: var(--heading);
+}
+
+.course .box-con .box p {
+  font-size: 1.3rem;
+  color: var(--text);
+  padding: 1rem 0;
+}
+
+.review {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/assets/review.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.review .heading {
+  color: var(--ftext);
+}
+
+.review .box-con {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  flex-wrap: wrap;
+}
+
+.review .box-con .box {
+  width: 45rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+  background: var(--ftext);
+  margin: 4rem 2rem;
+}
+
+.review .box-con .box img {
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+
+.review .box-con .box h3 {
+  font-size: 2.5rem;
+  color: var(--hover);
+}
+
+.review .box-con .box p {
+  font-size: 1.3rem;
+  color: var(--text);
+  margin: 1.5rem 0;
+}
+
+.review .box-con .box .stars #icon {
+  font-size: 1.3rem;
+  color: var(--star);
+}
+
+.contact {
+  background: var(--text);
+}
+.contact .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+.contact .row .image img {
+  width: 50vw;
+  height: 70vh;
+  margin: 0 3rem;
+}
+
+.contact .row .form-con {
+  width: 50%;
+  padding-right: 2rem;
+}
+.contact .row .form-con input,
+textarea {
+  height: 4rem;
+  width: 100%;
+  background: var(--ftext);
+  border: none;
+  border-radius: 5rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  color: var(--hover);
+  font-size: 1.7rem;
+  transition: 0.2s linear;
+}
+
+.contact .row .form-con input:focus,
+textarea:focus {
+  border: 0.2rem solid var(--hover);
+}
+
+.contact .row .form-con textarea {
+  height: 20rem;
+  border-radius: 1rem;
+  resize: none;
+  padding: 1rem;
+}
+
+.contact .row .form-con input[type="submit"] {
+  width: 100%;
+  background: var(--hover);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--ftext);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact .row .form-con input[type="submit"]:hover {
+  background: transparent;
+  border: 0.2rem solid var(--hover);
+  color: var(--hover);
+}
+
+.footer {
+  text-align: center;
+  background: var(--footer);
+}
+
+.footer .icons {
+  padding: 3rem 0;
+}
+
+.footer .icons .icon {
+  color: var(--ftext);
+  border: 0.2rem solid var(--ftext);
+  display: inline-block;
+  margin: 0 0.1rem;
+  transition: 0.2s linear;
+  text-align: center;
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 5.4rem;
+}
+
+.footer .icons #icon {
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+
+.footer .icons .icon:hover {
+  color: var(--hover);
+  border: 0.2rem solid var(--hover);
+}
+
+.footer .credit {
+  font-size: 2rem;
+  border-top: 0.1rem solid var(--back);
+  margin: 0 auto;
+  margin-top: 2rem;
+  color: var(--back);
+  padding: 1rem 0;
+}
+
+.footer .credit span {
+  color: var(--hover);
+}
+
+/*media queries */
+
+@media (max-width: 860px) {
+  html {
+    font-size: 55%;
+  }
+
+  header .menu {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: -80rem;
+    left: 4rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: var(--ftext);
+    width: 90%;
+  }
+
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  header .navbar ul li {
+    padding: 1.3rem 0;
+    background: var(--back2);
+    margin: 1.3rem auto;
+    width: 75%;
+  }
+
+  header .navbar ul li:hover,
+  header .navbar ul li a:hover {
+    background: var(--hover);
+    color: var(--ftext);
+  }
+
+  header .navbar ul li a {
+    font-size: 1.8rem;
+    background-color: transparent;
+  }
+
+  header .navbar ul .active2 {
+    color: var(--ftext);
+    background-color: var(--hover);
+  }
+
+  header .navbar ul li .active {
+    background-color: transparent;
+    color: var(--ftext);
+  }
+  .about .row {
+    display: block;
+    margin: 5rem 0;
+  }
+
+  .about .row .image img {
+    padding-top: 6rem;
+    height: 50vh;
+    width: 90vw;
+  }
+  .course .box-con {
+    width: 100%;
+  }
+  .contact .row {
+    flex-flow: column;
+  }
+  .contact .row .image img {
+    width: 80vw;
+    height: 50vh;
+    margin: 3rem 0;
+  }
+  .contact .row .form-con {
+    width: 90%;
+    padding: 0;
+  }
+}
