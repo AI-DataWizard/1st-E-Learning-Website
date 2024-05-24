@@ -569,7 +569,8 @@ textarea:focus {
   header .navbar {
     position: fixed;
     top: -80rem;
-    left: 4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background: var(--ftext);
